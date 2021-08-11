@@ -5,8 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash manager register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class = "container">
+        <h2 class = "heading">Cash register manager</h2>
+        <p class = "statment">Enter the bill amount & cash given 
+            by the customer and <br>find out the minimum number 
+            of notes to return.</p>
+
+
+        <div class="billBox">
+            <h4>Bill Amount</h4>
+            <input id="billAmount"type="number"placeholder="Enter amount here"></input>
+
+            <button id="nextBtn">Next</button>
+        </div>
+
+
+        <div class="cashGivenInput">
+            <h3 class="cashheading"> Cash Given:</h3>
+       <input id="cashGiven"type="number"placeholder="enter amount here"
+        ></input>
+        <button id="checkBtn">check</button>
+
+
+        <div class="errorMsg"></div>
+
+
+        <div class="changeReturn">
+            <h3> Return change:</h3>
+          <div id="output">
+              <table>
+                <tr>      
+                    <th class ="Noof">No. of Notes</td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                    <th class="Noof">Notes</td>
+                    <td class="amount" >2000</td>
+                    <td class="amount">500</td>
+                    <td class="amount">100</td>
+                    <td class="amount">20</td>
+                    <td class="amount">10</td>
+                    <td class="amount">5</td>
+                    <td class="amount">1</td>
+                    </tr>
+              </table>
+          </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
     
 </body>
 </html>
