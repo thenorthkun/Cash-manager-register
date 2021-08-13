@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
 .cashGivenInput {
     display: none;
     padding-left: 20px;
@@ -10,13 +19,9 @@
     display: none;
 }
 
-body {
-    margin-top: 2rem;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
 
-.container {
+
+#container {
     background-color: rgba(160, 209, 252, 0.7);
     width: 95%;
     max-width: 600px;
@@ -105,8 +110,7 @@ body {
 
 /* Note section */
 
-.noOfNotes {
-    /* background-color: white; */
+/* .noOfNotes {
 
     padding: 0.6rem;
     box-shadow: 15px 13px 23px #aaa;
@@ -116,20 +120,19 @@ body {
     font-weight: bold;
     width: 20%;
 
-}
+} */
 
-.Noof {
+/* .Noof {
     width: 20%;
     padding: 0.6rem;
     background-color: rgb(170, 163, 154);
     font-size: 0.8rem;
     font-weight: bold;
-}
+} */
 
-.amount {
+/* .amount {
     width: 20%;
 
-    /* background-color: white; */
     padding: 0.6rem;
     box-shadow: 15px 13px 23px #aaa;
     border-color: white;
@@ -137,4 +140,11 @@ body {
     font-size: 0.8rem;
     font-weight: bold;
 
+} */
+
+#output table,th,td{
+    margin: auto;
+    padding: 0.6rem;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
