@@ -21,7 +21,7 @@ body {
 
 
 
-#container {
+.container {
     background-color: rgba(160, 209, 252, 0.7);
     width: 95%;
     max-width: 600px;
@@ -142,9 +142,14 @@ body {
 
 } */
 
-#output table,th,td{
+.changeReturn{
     margin: auto;
-    padding: 0.6rem;
+}
+
+#output table,th,td{
+    
+    margin: auto;
+    padding: 0.8rem;
     border: 1px solid black;
     border-collapse: collapse;
 }
