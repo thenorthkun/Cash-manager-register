@@ -41,21 +41,25 @@ checkBtn.addEventListener('click', function () {
     
     hideMessage();
 
-    if (Number(cashGiven.value) < Number(billAmt.value)) {
+    let billAmtValue = Number(billAmt.value);
+    let cashGivenValue = Number(cashGiven.value);
+
+    if (billAmtValue > 0 && cashGivenValue > 0) {
         if (!Number.isInteger(cashGivenValue)) {
-            showMessage("Enter a number not a string bitch");
+            showMessage("Enter valid amount in cash given field");
             return;
         }
-        if (Number(billAmt.value) > Number(cashGiven.value) {
+        if (billAmtValue > cashGivenValue) {
             showMessage("Cash is less than bill, please enter right amount");
             return;
         }
-       const returnAmt = Number(cashGiven.value) - Number(billAmt.value);
+        returnAmt = cashGivenValue- billAmtValue  
         calculateNotes(returnAmt);
     } else {
         showMessage("Enter valid Bill amount and Cash  to continue")
     }
 })
+
 
 function calculateNotes(returnAmt) {
     
